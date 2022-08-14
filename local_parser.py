@@ -42,3 +42,4 @@ def group_vxtwitterify(message, bot):
         disable_notification=True,
     )
     #bot.delete_message(chat_id=message.chat.id, message_id=message.id)
+    
