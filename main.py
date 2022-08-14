@@ -1,7 +1,6 @@
 import os
 import telebot
 from telebot import types
-from keep_alive import keep_alive
 from local_parser import if_hasvx, channel_vxtwitterify
 
 TOKEN = os.environ["TOKEN"]
@@ -73,10 +72,6 @@ def close_menu(msg):
   bot.send_message(chat_id = msg.chat.id, text="done!",   reply_markup=markup)
 """
 
-
-
-
-keep_alive()
 
 bot.infinity_polling()
 #bot.polling()
